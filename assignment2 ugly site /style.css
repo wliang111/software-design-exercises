@@ -1,0 +1,41 @@
+body {
+  margin:0;
+  background:black;
+  overflow:hidden;
+  font-family:'Press Start 2P', monospace;
+  padding-bottom: 200px;
+  background-image:url('https://www.starbackdrops.com/cdn/shop/products/4_ce157040-c000-43d0-a95c-386ab685eb36.jpg?v=1733917962')
+}
+
+h1 {
+  font-size:60px;
+  color: red;
+  font-family:'Press Start 2P', monospace;
+  text-align:center;
+  background-color:yellow;
+  padding:20px;
+  margin-top:100px;
+}
+#title:hover{
+  background-image:url('https://media.istockphoto.com/id/510629908/photo/vibrant-red-pepper.jpg?s=1024x1024&w=is&k=20&c=cRMnXLksFGq48fsrYiZrfYafUE3H4clCPHNVDnWJPOw=')
+}
+.side-images{
+  display:flex;
+  justify-content:space-between;
+  padding:0 20px;
+  align-items:center;
+}
+.song {
+  text-align: center;
+  color: rgb(5, 5, 5);
+  font-family: 'Press Start 2P', monospace;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 10px;
+}
+
+.song .line {
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 10px;
+}
