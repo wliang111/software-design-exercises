@@ -1,8 +1,49 @@
-body {
-  color: red;
+body{
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
-  color: red;
-  font-family: monospace;
+main {
+  padding: 10px;
+  max-width: 900px;
+}
+h1{
+  font-size:40px;
+}
+
+
+.card-holder {
+  width:300px;
+  overflow-x:auto;
+  display: flex;
+  /*--flex-wrap: wrap;*/
+}
+
+.card {
+  width: 20000px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 15px;
+  font-size: clamp(6px, 2vw, 12px);
+  
+}
+.card-header {
+  font-size: 22px;
+  font-weight: 600;
+}
+.black-card{
+  background-color:black;
+  color:white;
+}
+.colorful-header{
+  background-color:pink;
+  padding:4px;
+  border-radius:4px;
+}
+.colorful-headers{
+  color:red;
 }

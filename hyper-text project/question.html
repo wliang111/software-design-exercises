@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<title>Question</title>
+<style>
+ body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+.question {
+  text-align: center;
+  max-width: 600px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+.signature {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+  .highlight {
+  font-style: italic;
+  font-weight: bold;
+  background: linear-gradient(90deg, darkred, midnightblue);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+
+.image-content {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10% auto;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px; right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+    <div class="question">
+        <p>Each announcement pulls me toward the next departing train, again and again.</p>
+        <p>But should I stand still, letting the next one go <span class="highlight">without me</span>—</p>
+        <p>what then?</p>
+        <p class="signature">—2020</p>
+      </div>
+</body>
+
+
+
+</html> 

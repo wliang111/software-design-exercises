@@ -1,0 +1,117 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color:bisque;
+
+}
+
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal-scroll {
+  height: 150px; 
+  width:300px;
+  display: flex;
+  overflow-x: auto; 
+  padding-top: 50px;
+  overflow-y:hidden;
+}
+
+.horizontal-scroll img {
+  width: 600px;
+  height: 150px;
+}
+.smoke-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/img5.png') center center / cover no-repeat;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 999;
+}
+
+.trigger-zone:hover ~ .smoke-overlay {
+  opacity: 0.8;
+}
+.middle-section{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 80px;
+  flex: 1; 
+  height:200px;
+}
+.vs1{
+  height:200px;
+  width:240px;
+  display:flex;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.vs2{
+  height:200px;
+  width:240px;
+  display:flex;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.vs1 img{
+  width:240px;
+  height:600px;
+}
+.vs2 img{
+  width:240px;
+  height:600px;
+}
+.hs2{
+  height: 150px; 
+  width:300px;
+  display: flex;
+  overflow-x: auto; 
+  overflow-y:hidden;
+  padding-top: 50px;
+  padding-bottom:50px;
+}
+.hs2 img{
+  width: 600px;
+  height: 150px;
+}
+.timetable-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+.timetable-content {
+  background: white;
+  width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.timetable .header, .timetable .row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.timetable .header { font-weight: bold; background: #f0f0f0; }
